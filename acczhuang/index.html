@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>桃李不言</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+</head>
+<body>
+<div id="container">
+     <!-- nav部分-->
+    <section class="navSection">
+        <div class="navbox">
+            <!-- 第一部分-->
+            <div class="navBoxleft">
+                <!-- logo-->
+                <div class="logoBox">
+                    <h1><img src="images/logo1_03.png" alt=""/></h1>
+                    <p>
+                        <span><img src="images/yinzhang/58d5f2821fbb0.png" alt=""/></span>
+                        acczhuang.top
+                        <!--mengniu47-->
+                        <span class="lodin">v</span>
+                    </p>
+                </div>
+                <!-- nav-->
+                <div class="navshow">
+                    <div>
+                        <pre class="yellowpre"></pre>
+                        <p>乐</p>
+                        <p>心</p>
+                        <p>于</p>
+                        <p>此</p>
+                    </div>
+                    <div>
+                        <pre class="bulepre"></pre>
+                        <p>乐</p>
+                        <p>学</p>
+                        <p>于</p>
+                        <p>此</p>
+                    </div>
+                    <div>
+                        <pre class="redore"></pre>
+                        <p>乐</p>
+                        <p>思</p>
+                        <p>于</p>
+                        <p>此</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中间条形导航-->
+            <div class="navBox">
+                <p></p>
+                <div>2</div>
+                <div>2</div>
+                <div>2</div>
+
+            </div>
+            <div class="navBoxright">
+                <div class="imgbox">
+                    <img src="images/chun/chuyouji_02.png" alt=""/>
+                    <img src="images/chun/shijie_02.png" alt=""/>
+                    <img src="images/chun/ershisi_02.png" alt=""/>
+                    <img src="images/chun/chunfeng_02.png" alt=""/>
+                </div>
+                <div class="toumin">
+                </div>
+                <p>桃李不言，下自成蹊</p>
+
+                <div class="banner">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    var i=0
+    $('.imgbox img').eq(i).addClass('show')
+    setInterval("chun()",3000)
+    function chun(){
+        i++;
+        if(i==4){
+            i=0
+            $('.imgbox img').eq(i).addClass('show').siblings().removeClass('show')
+        }else{
+            $('.imgbox img').eq(i).addClass('show').siblings().removeClass('show')
+        }
+    }
+
+
+</script>
+</body>
+</html>
